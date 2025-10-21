@@ -1,0 +1,197 @@
+<HTML>
+<HEAD>
+<TITLE> Contoh Skrip PHP </TITLE>
+<BODY>
+<?
+$nama = "Nadhirotus Syaima";
+echo "$nama berkata \"Katakan namamu!\"";
+?>
+</BODY>
+</HTML>
+  <?
+$a = 3;
+$b = 7;
+$a += 5;
+$b = ($c = 11) + 3;
+echo "Nilai variabel a adalah = $a";
+echo "<BR>";
+echo "Nilai variabel b adalah = $b";
+echo "<BR>";
+echo "Nilai variabel c adalah = $c";
+?>
+<?
+$a=10;
+$b=3;
+echo "\$a = $a <BR>";
+echo "\$b = $b <BR>";
+echo '$a + $b = ';
+print $a+$b;
+echo "<BR>";
+echo '$a - $b = ';
+print $a-$b;
+echo "<BR>";
+
+echo '$a * $b = ';
+print $a*$b;
+echo "<BR>";
+echo '$a / $b = ';
+print $a/$b;
+echo "<BR>";
+echo '$a % $b = ';
+print $a%$b;
+?><?
+$b = 4!=4;
+$c = 3+7 == 10;
+$a = ($b and $c);
+echo "\$a=$a <BR>";
+$a = ($b or $c);
+echo "\$a=$a <BR>";
+$a = ($b xor $c);
+echo "\$a=$a <BR>";
+$a = (!$b or $c);
+echo "\$a=$a <BR>";
+$a = $b && $c;
+echo "\$a=$a <BR>";
+$a = $b || $c;
+echo "\$a=$a <BR>";
+?>
+
+<?
+$x = 4;
+$a = ($x == 4);
+echo "\$a = $a <BR>";
+$b = ($x === "4");
+echo "\$b = $b <BR>";
+$c = ($x != 4);
+echo "\$c = $c <BR>";
+$d = ($x !== "4");
+echo "\$d = $d <BR>";
+$e = ($x < 5);
+echo "\$e = $e <BR>";
+$f = ($x > 5);
+echo "\$f = $f <BR>";
+$g = ($x <= 4);
+echo "\$g = $g <BR>";
+$h = ($x >= 5);
+echo "\$h = $h <BR>";
+<?
+$a = 5;
+$b = 7;
+if ($a < $b)
+{
+echo "\$a lebih kecil daripada \$b";
+}
+?>
+4. Operator Logika
+
+5. Operator Pembandingan
+
+6. Struktur Kontrol : If
+
+POLITEKNIK PURBAYA
+
+14
+
+<?
+$a = 5;
+$b = 3;
+echo "\$a = $a <BR>";
+echo "\$b = $b <BR>";
+if ($a < $b)
+{
+echo '$a lebih kecil daripada $b';
+}
+else
+{
+echo '$a lebih besar daripada $b';
+}
+?>
+
+<?
+$a = 5;
+$b = 7;
+echo "\$a = $a <BR>";
+echo "\$b = $b <BR>";
+if ($a == $b):
+echo '$s sama dengan $b';
+elseif ($a > $b):
+echo '$a lebih besar daripada $b';
+else:
+echo '$a lebih kecil daripada $b';
+endif;
+?>
+
+<?
+$a = 5;
+switch ($a) {
+case 0:
+echo '$a sama dengan 0';
+break;
+case 1:
+echo '$a sama dengan 1';
+break;
+case 2:
+echo '$a sama dengan 2';
+break;
+default:
+echo '$a tidak sama dengan 0, 1, atau 2';
+
+}
+?>
+<?
+echo "<H3> Cara 1 </H3>";
+$i = 1;
+while ($i <= 10)
+{
+print $i++;
+}
+echo "<BR>";
+echo "<H3> Cara 2 </H3>";
+$i = 1;
+while ($i <= 10):
+print $i;
+$i++;
+endwhile;
+?>
+
+<?
+for ($i=1;$i<=10;$i++) {
+print $i;
+}
+?>
+
+<?
+for ($i = 1; $i <= 10; $i++) {
+if ($i == 6) {
+break;
+}
+echo "\$i = $i <BR>";
+}
+?>
+10. Struktur Kontrol : while
+
+11. Struktur Kontrol : do...while
+
+12. Struktur Kontrol : for
+
+13. Struktur Kontrol : break
+<?
+$i = 2;
+do
+{
+echo "\$i = $i <BR>";
+$i++;
+}
+while ($i < 5);
+?>
+POLITEKNIK PURBAYA
+16
+<?
+for ($i = 1;$i <= 10;$i++) {
+if (!($i%2)) {
+continue;
+}
+echo "\$i = $i <BR>";
+}
+?>
+?>
